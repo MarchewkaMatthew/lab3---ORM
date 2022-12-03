@@ -1,6 +1,8 @@
 package org.example;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Supplier {
@@ -18,10 +20,22 @@ public class Supplier {
     private String Street;
     private String City;
 
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<Product> Products;
+
+    public Set<Product> getProducts() {
+        return Products;
+    }
+
+    public void addSupplierProduct(Product product) {
+        this.Products.add(product);
+    }
+
     public Supplier(String companyName, String street, String city) {
         CompanyName = companyName;
         Street = street;
         City = city;
+        Products = new HashSet<>();
     }
 
     public Supplier() {
