@@ -21,6 +21,18 @@ public class Product {
     @JoinColumn(name="SUPPLIER_FK")
     private Supplier supplier;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="CATEGORY_FK")
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     public void setSupplier(Supplier supplier) {
         this.supplier = supplier;
     }

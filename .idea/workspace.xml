@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed IV punktem">
+    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed V punktem">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670026919955</updated>
-      <workItem from="1670026921162" duration="13965000" />
+      <workItem from="1670026921162" duration="16385000" />
     </task>
     <task id="LOCAL-00001" summary="przed punktem III">
       <created>1670066185152</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670099294303</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="przed V punktem">
+      <created>1670101732134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670101732134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="przed punktem III" />
     <MESSAGE value="przed IV punktem" />
-    <option name="LAST_COMMIT_MESSAGE" value="przed IV punktem" />
+    <MESSAGE value="przed V punktem" />
+    <option name="LAST_COMMIT_MESSAGE" value="przed V punktem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

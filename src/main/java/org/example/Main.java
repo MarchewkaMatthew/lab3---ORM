@@ -57,24 +57,41 @@ public class Main {
 
         // IV
 
-        Product product1 = new Product("Komputer", 10);
-        Product product2 = new Product("Myszka", 15);
-        Product product3 = new Product("Klawiatura", 20);
-        session.save(product1);
-        session.save(product2);
-        session.save(product3);
+//        Product product1 = new Product("Komputer", 10);
+//        Product product2 = new Product("Myszka", 15);
+//        Product product3 = new Product("Klawiatura", 20);
+//        session.save(product1);
+//        session.save(product2);
+//        session.save(product3);
+//
+//       Supplier supplier = new Supplier("Dell", "Ruczaj", "Katowice");
+//       session.save(supplier);
+//
+//        supplier.addSupplierProduct(product1);
+//        supplier.addSupplierProduct(product2);
+//        supplier.addSupplierProduct(product3);
+//
+//        // musimy zadbać o dwustronną referencję
+//        product1.setSupplier(supplier);
+//        product2.setSupplier(supplier);
+//        product3.setSupplier(supplier);
+//
+//        // V
+//
+//        Category category1 = new Category("Małe sprzęty");
+//        Category category2 = new Category("Duże sprzęty");
+//        session.save(category1);
+//        session.save(category2);
+//
+//        category1.addCategoryProduct(product2);
+//        category1.addCategoryProduct(product3);
+//        category2.addCategoryProduct(product1);
 
-       Supplier supplier = new Supplier("Dell", "Ruczaj", "Katowice");
-       session.save(supplier);
+        Category foundCategory = session.get(org.example.Category.class, 1);
+        System.out.println(foundCategory.getProducts());
 
-        supplier.addSupplierProduct(product1);
-        supplier.addSupplierProduct(product2);
-        supplier.addSupplierProduct(product3);
-
-        // musimy zadbać o dwustronną referencję
-        product1.setSupplier(supplier);
-        product2.setSupplier(supplier);
-        product3.setSupplier(supplier);
+        Product foundProduct = session.get(org.example.Product.class, 1);
+        System.out.println(foundProduct.getCategory());
 
         try {
             tx.commit();

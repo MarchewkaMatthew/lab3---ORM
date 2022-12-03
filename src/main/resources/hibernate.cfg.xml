@@ -12,5 +12,6 @@
     <property name="format_sql">true</property>
     <mapping class="org.example.Product"></mapping>
     <mapping class="org.example.Supplier"></mapping>
+    <mapping class="org.example.Category"></mapping>
   </session-factory>
 </hibernate-configuration>
