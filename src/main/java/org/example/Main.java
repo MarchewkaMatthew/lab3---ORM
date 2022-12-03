@@ -55,6 +55,27 @@ public class Main {
 //        Supplier supplier = session.get(org.example.Supplier.class, 152);
 //        System.out.println(supplier.getProducts().size());
 
+        // IV
+
+        Product product1 = new Product("Komputer", 10);
+        Product product2 = new Product("Myszka", 15);
+        Product product3 = new Product("Klawiatura", 20);
+        session.save(product1);
+        session.save(product2);
+        session.save(product3);
+
+       Supplier supplier = new Supplier("Dell", "Ruczaj", "Katowice");
+       session.save(supplier);
+
+        supplier.addSupplierProduct(product1);
+        supplier.addSupplierProduct(product2);
+        supplier.addSupplierProduct(product3);
+
+        // musimy zadbać o dwustronną referencję
+        product1.setSupplier(supplier);
+        product2.setSupplier(supplier);
+        product3.setSupplier(supplier);
+
         try {
             tx.commit();
         } finally {

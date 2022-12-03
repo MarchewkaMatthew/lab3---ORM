@@ -20,7 +20,7 @@ public class Supplier {
     private String Street;
     private String City;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "supplier")
     private Set<Product> Products;
 
     public Set<Product> getProducts() {

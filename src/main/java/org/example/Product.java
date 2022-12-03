@@ -17,6 +17,20 @@ public class Product {
     private String ProductName;
     private Integer UnitsOnStock;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="SUPPLIER_FK")
+    private Supplier supplier;
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
+    }
+
+    public Product(String productName, Integer unitsOnStock, Supplier supplier) {
+        ProductName = productName;
+        UnitsOnStock = unitsOnStock;
+        this.supplier = supplier;
+    }
+
     public Product(String productName, Integer unitsOnStock) {
         ProductName = productName;
         UnitsOnStock = unitsOnStock;
