@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed VII">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed VIII">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670026919955</updated>
       <workItem from="1670026921162" duration="25801000" />
-      <workItem from="1670876587901" duration="5640000" />
+      <workItem from="1670876587901" duration="7027000" />
     </task>
     <task id="LOCAL-00001" summary="przed punktem III">
       <created>1670066185152</created>
@@ -153,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670878100432</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="przed VIII">
+      <created>1670885675314</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670885675314</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +170,8 @@
     <MESSAGE value="przed V punktem" />
     <MESSAGE value="przed VI" />
     <MESSAGE value="przed VII" />
-    <option name="LAST_COMMIT_MESSAGE" value="przed VII" />
+    <MESSAGE value="przed VIII" />
+    <option name="LAST_COMMIT_MESSAGE" value="przed VIII" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

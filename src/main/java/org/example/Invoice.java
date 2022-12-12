@@ -18,7 +18,7 @@ public class Invoice {
     private Integer Id;
     private Integer InvoiceNumber;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private Set<Product> Products;
 
     public void addProductToInvoice(Product product) {

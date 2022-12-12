@@ -13,7 +13,7 @@ public class MainJpa {
         EntityTransaction etx = em.getTransaction();
         etx.begin();
 
-        // VI
+        // VII
 
 //        Product product1 = new Product("Koszulka", 10);
 //        Product product2 = new Product("Bluza", 15);
@@ -33,11 +33,22 @@ public class MainJpa {
 //
 //        invoice2.addProductToInvoice(product1);
 
-        Invoice foundInvoice = em.find(org.example.Invoice.class, 1);
-        System.out.println(foundInvoice.getProducts());
+//        Invoice foundInvoice = em.find(org.example.Invoice.class, 1);
+//        System.out.println(foundInvoice.getProducts());
+//
+//        Product foundProduct  = em.find(org.example.Product.class, 1);
+//        System.out.println(foundProduct.getInvoices());
 
-        Product foundProduct  = em.find(org.example.Product.class, 1);
-        System.out.println(foundProduct.getInvoices());
+        // VIII
+        Product product1 = new Product("Laptop", 10);
+        Product product2 = new Product("Komputer", 15);
+
+        Invoice invoice1 = new Invoice(123);
+
+        invoice1.addProductToInvoice(product1);
+        invoice1.addProductToInvoice(product2);
+
+        em.persist(invoice1);
 
         etx.commit();
         em.close();
