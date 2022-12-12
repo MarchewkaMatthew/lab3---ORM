@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@SecondaryTable(name="ADDRESS")
 public class Supplier {
     @Id
     @SequenceGenerator(
@@ -20,12 +21,22 @@ public class Supplier {
 
     @OneToMany(mappedBy = "supplier")
     private Set<Product> Products;
-    @Embedded
-    private Address Address;
 
-    public Supplier(String companyName, Address address) {
+    @Column(table = "ADDRESS")
+    private Integer ApartmentNumber;
+    @Column(table = "ADDRESS")
+    private Integer BlockNumber;
+    @Column(table = "ADDRESS")
+    private String Street;
+    @Column(table = "ADDRESS")
+    private String City;
+    @Column(table = "ADDRESS")
+    private String ZipCode;
+    @Column(table = "ADDRESS")
+    private String Country;
+
+    public Supplier(String companyName) {
         CompanyName = companyName;
-        Address = address;
         Products = new HashSet<>();
     }
 
@@ -38,9 +49,5 @@ public class Supplier {
 
     public void addSupplierProduct(Product product) {
         this.Products.add(product);
-    }
-
-    public org.example.Address getAddress() {
-        return Address;
     }
 }

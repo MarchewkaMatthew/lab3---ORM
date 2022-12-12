@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed IX">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Address.java" afterDir="false" />
+    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="IX and half">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670026919955</updated>
       <workItem from="1670026921162" duration="25801000" />
-      <workItem from="1670876587901" duration="7960000" />
+      <workItem from="1670876587901" duration="8833000" />
     </task>
     <task id="LOCAL-00001" summary="przed punktem III">
       <created>1670066185152</created>
@@ -164,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670887016512</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="IX and half">
+      <created>1670888342295</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670888342295</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +185,8 @@
     <MESSAGE value="przed VII" />
     <MESSAGE value="przed VIII" />
     <MESSAGE value="przed IX" />
-    <option name="LAST_COMMIT_MESSAGE" value="przed IX" />
+    <MESSAGE value="IX and half" />
+    <option name="LAST_COMMIT_MESSAGE" value="IX and half" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

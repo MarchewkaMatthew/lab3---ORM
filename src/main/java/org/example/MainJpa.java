@@ -57,8 +57,8 @@ public class MainJpa {
 //
 //        em.persist(supplier);
 
-        Supplier foundSupplier  = em.find(org.example.Supplier.class, 1);
-        System.out.println(foundSupplier.getAddress().toString());
+//        Supplier foundSupplier  = em.find(org.example.Supplier.class, 1);
+//        System.out.println(foundSupplier.getAddress().toString());
 
         etx.commit();
         em.close();
