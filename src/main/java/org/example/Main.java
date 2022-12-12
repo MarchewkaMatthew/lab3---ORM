@@ -6,9 +6,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Main {
     private static final SessionFactory ourSessionFactory;
 
@@ -87,11 +84,39 @@ public class Main {
 //        category1.addCategoryProduct(product3);
 //        category2.addCategoryProduct(product1);
 
-        Category foundCategory = session.get(org.example.Category.class, 1);
-        System.out.println(foundCategory.getProducts());
+//        Category foundCategory = session.get(org.example.Category.class, 1);
+//        System.out.println(foundCategory.getProducts());
+//
+//        Product foundProduct = session.get(org.example.Product.class, 1);
+//        System.out.println(foundProduct.getCategory());
 
-        Product foundProduct = session.get(org.example.Product.class, 1);
-        System.out.println(foundProduct.getCategory());
+        // VI
+
+//        Product product1 = new Product("Koszulka", 10);
+//        Product product2 = new Product("Bluza", 15);
+//        Product product3 = new Product("Skarpetki", 20);
+//        session.save(product1);
+//        session.save(product2);
+//        session.save(product3);
+//
+//        Invoice invoice1 = new Invoice(403);
+//        Invoice invoice2 = new Invoice(427);
+//        session.save(invoice1);
+//        session.save(invoice2);
+//
+//        invoice1.addProductToInvoice(product1);
+//        invoice1.addProductToInvoice(product2);
+//        invoice1.addProductToInvoice(product3);
+//
+//        invoice2.addProductToInvoice(product1);
+
+        Invoice foundInvoice = session.get(org.example.Invoice.class, 1);
+        System.out.println(foundInvoice.getProducts());
+
+        Product foundProduct  = session.get(org.example.Product.class, 1);
+        System.out.println(foundProduct.getInvoices());
+
+
 
         try {
             tx.commit();

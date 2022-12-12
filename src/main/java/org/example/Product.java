@@ -1,6 +1,8 @@
 package org.example;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Product {
@@ -25,6 +27,17 @@ public class Product {
     @JoinColumn(name="CATEGORY_FK")
     private Category category;
 
+    @ManyToMany(mappedBy = "Products")
+    private Set<Invoice> Invoices;
+
+    public Set<Invoice> getInvoices() {
+        return Invoices;
+    }
+
+    public void addInvoiceToProduct(Invoice invoice) {
+        this.Invoices.add(invoice);
+    }
+
     public Category getCategory() {
         return category;
     }
@@ -41,12 +54,24 @@ public class Product {
         ProductName = productName;
         UnitsOnStock = unitsOnStock;
         this.supplier = supplier;
+        Invoices = new HashSet<>();
     }
 
     public Product(String productName, Integer unitsOnStock) {
         ProductName = productName;
         UnitsOnStock = unitsOnStock;
+        Invoices = new HashSet<>();
     }
 
     public Product() {}
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "ProductName='" + ProductName + '\'' +
+                ", UnitsOnStock=" + UnitsOnStock +
+                ", supplier=" + supplier +
+                ", category=" + category +
+                '}';
+    }
 }
