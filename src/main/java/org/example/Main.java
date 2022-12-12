@@ -116,8 +116,6 @@ public class Main {
         Product foundProduct  = session.get(org.example.Product.class, 1);
         System.out.println(foundProduct.getInvoices());
 
-
-
         try {
             tx.commit();
         } finally {

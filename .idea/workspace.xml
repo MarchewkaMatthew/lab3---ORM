@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed VI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoice.java" afterDir="false" />
+    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="przed VII">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +69,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MateuszMarchewka\Documents\STUDIA\lab3-v2\src\main\resources\META-INF" />
       <recent name="C:\Users\MateuszMarchewka\Documents\STUDIA\lab3-v2\src\main\java\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainJpa">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="lab3-v2" />
@@ -84,8 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainJpa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MainJpa" />
+      <module name="lab3-v2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainJpa" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -99,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670026919955</updated>
       <workItem from="1670026921162" duration="25801000" />
-      <workItem from="1670876587901" duration="1367000" />
+      <workItem from="1670876587901" duration="5640000" />
     </task>
     <task id="LOCAL-00001" summary="przed punktem III">
       <created>1670066185152</created>
@@ -129,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670104280021</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="przed VII">
+      <created>1670878100432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670878100432</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +164,8 @@
     <MESSAGE value="przed IV punktem" />
     <MESSAGE value="przed V punktem" />
     <MESSAGE value="przed VI" />
-    <option name="LAST_COMMIT_MESSAGE" value="przed VI" />
+    <MESSAGE value="przed VII" />
+    <option name="LAST_COMMIT_MESSAGE" value="przed VII" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

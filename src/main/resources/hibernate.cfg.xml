@@ -13,5 +13,6 @@
     <mapping class="org.example.Product"></mapping>
     <mapping class="org.example.Supplier"></mapping>
     <mapping class="org.example.Category"></mapping>
+    <mapping class="org.example.Invoice"></mapping>
   </session-factory>
 </hibernate-configuration>
