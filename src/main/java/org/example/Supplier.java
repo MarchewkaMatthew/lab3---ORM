@@ -17,11 +17,20 @@ public class Supplier {
     )
     private Integer Id;
     private String CompanyName;
-    private String Street;
-    private String City;
 
     @OneToMany(mappedBy = "supplier")
     private Set<Product> Products;
+    @Embedded
+    private Address Address;
+
+    public Supplier(String companyName, Address address) {
+        CompanyName = companyName;
+        Address = address;
+        Products = new HashSet<>();
+    }
+
+    public Supplier() {
+    }
 
     public Set<Product> getProducts() {
         return Products;
@@ -31,13 +40,7 @@ public class Supplier {
         this.Products.add(product);
     }
 
-    public Supplier(String companyName, String street, String city) {
-        CompanyName = companyName;
-        Street = street;
-        City = city;
-        Products = new HashSet<>();
-    }
-
-    public Supplier() {
+    public org.example.Address getAddress() {
+        return Address;
     }
 }

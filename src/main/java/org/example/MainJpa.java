@@ -40,15 +40,25 @@ public class MainJpa {
 //        System.out.println(foundProduct.getInvoices());
 
         // VIII
-        Product product1 = new Product("Laptop", 10);
-        Product product2 = new Product("Komputer", 15);
+//        Product product1 = new Product("Laptop", 10);
+//        Product product2 = new Product("Komputer", 15);
+//
+//        Invoice invoice1 = new Invoice(123);
+//
+//        invoice1.addProductToInvoice(product1);
+//        invoice1.addProductToInvoice(product2);
+//
+//        em.persist(invoice1);
 
-        Invoice invoice1 = new Invoice(123);
+        // IX
 
-        invoice1.addProductToInvoice(product1);
-        invoice1.addProductToInvoice(product2);
+//        Address address = new Address(1,2,"Street", "Cupertino", "123", "USA");
+//        Supplier supplier = new Supplier("Apple", address);
+//
+//        em.persist(supplier);
 
-        em.persist(invoice1);
+        Supplier foundSupplier  = em.find(org.example.Supplier.class, 1);
+        System.out.println(foundSupplier.getAddress().toString());
 
         etx.commit();
         em.close();
