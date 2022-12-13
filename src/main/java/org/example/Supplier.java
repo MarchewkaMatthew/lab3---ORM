@@ -23,14 +23,6 @@ public class Supplier {
     private Set<Product> Products;
 
     @Embedded
-    @AttributeOverrides({
-            @AttributeOverride(name="ApartmentNumber", column=@Column(table="ADDRESS")),
-            @AttributeOverride(name="BlockNumber", column=@Column(table="ADDRESS")),
-            @AttributeOverride(name="Street", column=@Column(table="ADDRESS")),
-            @AttributeOverride(name="City", column=@Column(table="ADDRESS")),
-            @AttributeOverride(name="ZipCode", column=@Column(table="ADDRESS")),
-            @AttributeOverride(name="Country", column=@Column(table="ADDRESS")),
-    })
     private Address Address;
 
     public Supplier(String companyName, Address address) {
