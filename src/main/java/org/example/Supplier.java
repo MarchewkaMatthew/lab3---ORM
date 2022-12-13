@@ -22,22 +22,21 @@ public class Supplier {
     @OneToMany(mappedBy = "supplier")
     private Set<Product> Products;
 
-    @Column(table = "ADDRESS")
-    private Integer ApartmentNumber;
-    @Column(table = "ADDRESS")
-    private Integer BlockNumber;
-    @Column(table = "ADDRESS")
-    private String Street;
-    @Column(table = "ADDRESS")
-    private String City;
-    @Column(table = "ADDRESS")
-    private String ZipCode;
-    @Column(table = "ADDRESS")
-    private String Country;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name="ApartmentNumber", column=@Column(table="ADDRESS")),
+            @AttributeOverride(name="BlockNumber", column=@Column(table="ADDRESS")),
+            @AttributeOverride(name="Street", column=@Column(table="ADDRESS")),
+            @AttributeOverride(name="City", column=@Column(table="ADDRESS")),
+            @AttributeOverride(name="ZipCode", column=@Column(table="ADDRESS")),
+            @AttributeOverride(name="Country", column=@Column(table="ADDRESS")),
+    })
+    private Address Address;
 
-    public Supplier(String companyName) {
+    public Supplier(String companyName, Address address) {
         CompanyName = companyName;
         Products = new HashSet<>();
+        Address = address;
     }
 
     public Supplier() {
@@ -49,5 +48,9 @@ public class Supplier {
 
     public void addSupplierProduct(Product product) {
         this.Products.add(product);
+    }
+
+    public org.example.Address getAddress() {
+        return Address;
     }
 }

@@ -52,10 +52,10 @@ public class MainJpa {
 
         // IX
 
-//        Address address = new Address(1,2,"Street", "Cupertino", "123", "USA");
-//        Supplier supplier = new Supplier("Apple", address);
-//
-//        em.persist(supplier);
+        Address address = new Address(1,2,"Street", "Cupertino", "123", "USA");
+        Supplier supplier = new Supplier("Apple", address);
+
+        em.persist(supplier);
 
 //        Supplier foundSupplier  = em.find(org.example.Supplier.class, 1);
 //        System.out.println(foundSupplier.getAddress().toString());
