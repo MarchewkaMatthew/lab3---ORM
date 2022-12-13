@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="before X v2">
+    <list default="true" id="8c7f1183-baab-4724-a8f4-0a4ecec65aff" name="Changes" comment="before X v3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/46833437-0927-4a4b-866a-84e56d5e4c1a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/46833437-0927-4a4b-866a-84e56d5e4c1a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MainJpa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670889716743</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="before X v3">
+      <created>1670890006415</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670890006415</updated>
+    </task>
+    <task id="LOCAL-00011" summary="before X v3">
+      <created>1670890010733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670890010733</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +212,8 @@
     <MESSAGE value="przed IX" />
     <MESSAGE value="IX and half" />
     <MESSAGE value="before X v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="before X v2" />
+    <MESSAGE value="before X v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="before X v3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

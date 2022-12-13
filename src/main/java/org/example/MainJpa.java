@@ -52,13 +52,30 @@ public class MainJpa {
 
         // IX
 
-        Address address = new Address(1,2,"Street", "Cupertino", "123", "USA");
-        Supplier supplier = new Supplier("Apple", address);
-
-        em.persist(supplier);
+//        Address address = new Address(1,2,"Street", "Cupertino", "123", "USA");
+//        Supplier supplier = new Supplier("Apple", address);
+//
+//        em.persist(supplier);
 
 //        Supplier foundSupplier  = em.find(org.example.Supplier.class, 1);
 //        System.out.println(foundSupplier.getAddress().toString());
+
+        // X
+
+//        Address address1 = new Address(1,2,"Street", "Cupertino", "123", "USA");
+//        Address address2 =  new Address(5,6,"Street", "Krakow", "678", "PL");
+//
+//        Supplier supplier = new Supplier("Supplier 1", address1, "00 48 123");
+//        Customer customer = new Customer("Customer 1", address2, 23);
+//
+//        em.persist(supplier);
+//        em.persist(customer);
+
+        Supplier foundSupplier  = em.find(org.example.Supplier.class, 52);
+        Customer foundCustomer  = em.find(org.example.Customer.class, 53);
+
+        System.out.println(foundSupplier.toString());
+        System.out.println(foundCustomer.toString());
 
         etx.commit();
         em.close();

@@ -17,202 +17,235 @@
     <schema id="10" parent="1" name="SYSIBM"/>
     <schema id="11" parent="1" name="SYSPROC"/>
     <schema id="12" parent="1" name="SYSSTAT"/>
-    <table id="13" parent="2" name="ADDRESS"/>
-    <table id="14" parent="2" name="CATEGORY"/>
-    <table id="15" parent="2" name="INVOICE"/>
-    <table id="16" parent="2" name="INVOICE_PRODUCT"/>
-    <table id="17" parent="2" name="PRODUCT"/>
-    <table id="18" parent="2" name="SUPPLIER"/>
-    <column id="19" parent="13" name="APARTMENTNUMBER">
+    <table id="13" parent="2" name="CATEGORY"/>
+    <table id="14" parent="2" name="COMPANY"/>
+    <table id="15" parent="2" name="CUSTOMER"/>
+    <table id="16" parent="2" name="INVOICE"/>
+    <table id="17" parent="2" name="INVOICE_PRODUCT"/>
+    <table id="18" parent="2" name="PRODUCT"/>
+    <table id="19" parent="2" name="SUPPLIER"/>
+    <column id="20" parent="13" name="ID">
       <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="20" parent="13" name="BLOCKNUMBER">
+    <column id="21" parent="13" name="NAME">
+      <DasType>VARCHAR(255)|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="22" parent="13" name="SQL0000000241-8ad3d386-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="13" name="SQL0000000241-8ad3d386-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="14" name="ID">
+      <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="25" parent="14" name="APARTMENTNUMBER">
       <DasType>INTEGER|4s</DasType>
       <Position>2</Position>
     </column>
-    <column id="21" parent="13" name="CITY">
-      <DasType>VARCHAR(255)|12s</DasType>
+    <column id="26" parent="14" name="BLOCKNUMBER">
+      <DasType>INTEGER|4s</DasType>
       <Position>3</Position>
     </column>
-    <column id="22" parent="13" name="COUNTRY">
+    <column id="27" parent="14" name="CITY">
       <DasType>VARCHAR(255)|12s</DasType>
       <Position>4</Position>
     </column>
-    <column id="23" parent="13" name="STREET">
+    <column id="28" parent="14" name="COUNTRY">
       <DasType>VARCHAR(255)|12s</DasType>
       <Position>5</Position>
     </column>
-    <column id="24" parent="13" name="ZIPCODE">
+    <column id="29" parent="14" name="STREET">
       <DasType>VARCHAR(255)|12s</DasType>
       <Position>6</Position>
     </column>
-    <column id="25" parent="13" name="ID">
-      <DasType>INTEGER|4s</DasType>
-      <NotNull>1</NotNull>
+    <column id="30" parent="14" name="ZIPCODE">
+      <DasType>VARCHAR(255)|12s</DasType>
       <Position>7</Position>
-    </column>
-    <foreign-key id="26" parent="13" name="FK7J0K60LH3P308IO4UJWY52G8M">
-      <ColNames>ID</ColNames>
-      <RefColNames>ID</RefColNames>
-      <RefTableName>SUPPLIER</RefTableName>
-    </foreign-key>
-    <index id="27" parent="13" name="SQL0000000053-6bf0c67e-0185-080a-1d6a-00001eee4d58">
-      <ColNames>ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
-    </index>
-    <index id="28" parent="13" name="SQL0000000059-06fc46a2-0185-080a-1d6a-00001eee4d58">
-      <ColNames>ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-    </index>
-    <key id="29" parent="13" name="SQL0000000053-6bf0c67e-0185-080a-1d6a-00001eee4d58">
-      <ColNames>ID</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="30" parent="14" name="ID">
-      <DasType>INTEGER|4s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
     </column>
     <column id="31" parent="14" name="NAME">
       <DasType>VARCHAR(255)|12s</DasType>
-      <Position>2</Position>
+      <Position>8</Position>
     </column>
-    <index id="32" parent="14" name="SQL0000000054-25b18684-0185-080a-1d6a-00001eee4d58">
+    <index id="32" parent="14" name="SQL0000000242-8503938d-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="33" parent="14" name="SQL0000000054-25b18684-0185-080a-1d6a-00001eee4d58">
+    <key id="33" parent="14" name="SQL0000000242-8503938d-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="34" parent="15" name="ID">
+    <column id="34" parent="15" name="DISCOUNT">
       <DasType>INTEGER|4s</DasType>
-      <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="35" parent="15" name="INVOICENUMBER">
+    <column id="35" parent="15" name="ID">
       <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="36" parent="15" name="SQL0000000055-9f7b468a-0185-080a-1d6a-00001eee4d58">
+    <foreign-key id="36" parent="15" name="FKFREJPL41Y6MT0XLWIE9JN6O1S">
+      <ColNames>ID</ColNames>
+      <RefColNames>ID</RefColNames>
+      <RefTableName>COMPANY</RefTableName>
+    </foreign-key>
+    <index id="37" parent="15" name="SQL0000000243-3f3f9394-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="37" parent="15" name="SQL0000000055-9f7b468a-0185-080a-1d6a-00001eee4d58">
+    <index id="38" parent="15" name="SQL0000000248-dc5b93b4-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
+    <key id="39" parent="15" name="SQL0000000243-3f3f9394-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="38" parent="16" name="INVOICES_ID">
+    <column id="40" parent="16" name="ID">
       <DasType>INTEGER|4s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="39" parent="16" name="PRODUCTS_ID">
+    <column id="41" parent="16" name="INVOICENUMBER">
+      <DasType>INTEGER|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="42" parent="16" name="SQL0000000244-cca1539a-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="16" name="SQL0000000244-cca1539a-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="17" name="INVOICES_ID">
+      <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="45" parent="17" name="PRODUCTS_ID">
       <DasType>INTEGER|4s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="40" parent="16" name="FKAIXYPPG35VDC9AOWDB8XCJ5EV">
+    <foreign-key id="46" parent="17" name="FKAIXYPPG35VDC9AOWDB8XCJ5EV">
       <ColNames>INVOICES_ID</ColNames>
       <RefColNames>ID</RefColNames>
       <RefTableName>INVOICE</RefTableName>
     </foreign-key>
-    <foreign-key id="41" parent="16" name="FKH8HFJB51VLVQ0T2JENNYMPHJI">
+    <foreign-key id="47" parent="17" name="FKH8HFJB51VLVQ0T2JENNYMPHJI">
       <ColNames>PRODUCTS_ID</ColNames>
       <RefColNames>ID</RefColNames>
       <RefTableName>PRODUCT</RefTableName>
     </foreign-key>
-    <index id="42" parent="16" name="SQL0000000056-594e0690-0185-080a-1d6a-00001eee4d58">
+    <index id="48" parent="17" name="SQL0000000245-9a0c13a0-0185-080a-1d6a-00001eee4d58">
       <ColNames>INVOICES_ID
 PRODUCTS_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="43" parent="16" name="SQL0000000061-adf1c6ab-0185-080a-1d6a-00001eee4d58">
+    <index id="49" parent="17" name="SQL0000000250-70b993bd-0185-080a-1d6a-00001eee4d58">
       <ColNames>INVOICES_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <index id="44" parent="16" name="SQL0000000060-674946a7-0185-080a-1d6a-00001eee4d58">
+    <index id="50" parent="17" name="SQL0000000249-9cff13b9-0185-080a-1d6a-00001eee4d58">
       <ColNames>PRODUCTS_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <key id="45" parent="16" name="SQL0000000056-594e0690-0185-080a-1d6a-00001eee4d58">
+    <key id="51" parent="17" name="SQL0000000245-9a0c13a0-0185-080a-1d6a-00001eee4d58">
       <ColNames>INVOICES_ID
 PRODUCTS_ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="17" name="ID">
+    <column id="52" parent="18" name="ID">
       <DasType>INTEGER|4s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="47" parent="17" name="PRODUCTNAME">
+    <column id="53" parent="18" name="PRODUCTNAME">
       <DasType>VARCHAR(255)|12s</DasType>
       <Position>2</Position>
     </column>
-    <column id="48" parent="17" name="UNITSONSTOCK">
+    <column id="54" parent="18" name="UNITSONSTOCK">
       <DasType>INTEGER|4s</DasType>
       <Position>3</Position>
     </column>
-    <column id="49" parent="17" name="CATEGORY_FK">
+    <column id="55" parent="18" name="CATEGORY_FK">
       <DasType>INTEGER|4s</DasType>
       <Position>4</Position>
     </column>
-    <column id="50" parent="17" name="SUPPLIER_FK">
+    <column id="56" parent="18" name="SUPPLIER_FK">
       <DasType>INTEGER|4s</DasType>
       <Position>5</Position>
     </column>
-    <foreign-key id="51" parent="17" name="FKPURGJJ563MV2VAV0MGGDXEFD7">
+    <foreign-key id="57" parent="18" name="FKPURGJJ563MV2VAV0MGGDXEFD7">
       <ColNames>CATEGORY_FK</ColNames>
       <RefColNames>ID</RefColNames>
       <RefTableName>CATEGORY</RefTableName>
     </foreign-key>
-    <foreign-key id="52" parent="17" name="FKEURY2HXL2J8URLKMW36585TKR">
+    <foreign-key id="58" parent="18" name="FKEURY2HXL2J8URLKMW36585TKR">
       <ColNames>SUPPLIER_FK</ColNames>
       <RefColNames>ID</RefColNames>
       <RefTableName>SUPPLIER</RefTableName>
     </foreign-key>
-    <index id="53" parent="17" name="SQL0000000057-d329c696-0185-080a-1d6a-00001eee4d58">
+    <index id="59" parent="18" name="SQL0000000246-277fd3a6-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="54" parent="17" name="SQL0000000062-f49e46af-0185-080a-1d6a-00001eee4d58">
+    <index id="60" parent="18" name="SQL0000000251-447813c1-0185-080a-1d6a-00001eee4d58">
       <ColNames>CATEGORY_FK</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <index id="55" parent="17" name="SQL0000000063-3b4ec6b3-0185-080a-1d6a-00001eee4d58">
+    <index id="61" parent="18" name="SQL0000000252-183a93c5-0185-080a-1d6a-00001eee4d58">
       <ColNames>SUPPLIER_FK</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <key id="56" parent="17" name="SQL0000000057-d329c696-0185-080a-1d6a-00001eee4d58">
+    <key id="62" parent="18" name="SQL0000000246-277fd3a6-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="57" parent="18" name="ID">
-      <DasType>INTEGER|4s</DasType>
-      <NotNull>1</NotNull>
+    <column id="63" parent="19" name="BANKACCOUNTNUMBER">
+      <DasType>VARCHAR(255)|12s</DasType>
       <Position>1</Position>
     </column>
-    <column id="58" parent="18" name="COMPANYNAME">
-      <DasType>VARCHAR(255)|12s</DasType>
+    <column id="64" parent="19" name="ID">
+      <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="59" parent="18" name="SQL0000000058-8d0e869c-0185-080a-1d6a-00001eee4d58">
+    <foreign-key id="65" parent="19" name="FKPVDH5D51BVEXBDINMFHIAXUUG">
+      <ColNames>ID</ColNames>
+      <RefColNames>ID</RefColNames>
+      <RefTableName>COMPANY</RefTableName>
+    </foreign-key>
+    <index id="66" parent="19" name="SQL0000000247-21e793ad-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="60" parent="18" name="SQL0000000058-8d0e869c-0185-080a-1d6a-00001eee4d58">
+    <index id="67" parent="19" name="SQL0000000253-38f353ca-0185-080a-1d6a-00001eee4d58">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
+    <key id="68" parent="19" name="SQL0000000247-21e793ad-0185-080a-1d6a-00001eee4d58">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

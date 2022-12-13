@@ -5,30 +5,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@SecondaryTable(name="ADDRESS")
-public class Supplier {
-    @Id
-    @SequenceGenerator(
-            name = "supplier_id_sequence",
-            sequenceName = "supplier_id_sequence"
-    )
-    @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
-            generator = "supplier_id_sequence"
-    )
-    private Integer Id;
-    private String CompanyName;
-
+public class Supplier extends Company {
     @OneToMany(mappedBy = "supplier")
     private Set<Product> Products;
 
-    @Embedded
-    private Address Address;
+    private String BankAccountNumber;
 
-    public Supplier(String companyName, Address address) {
-        CompanyName = companyName;
+    public Supplier(String companyName, Address address, String bankAccountNumber) {
+        super(companyName, address);
         Products = new HashSet<>();
-        Address = address;
+        BankAccountNumber = bankAccountNumber;
     }
 
     public Supplier() {
@@ -42,7 +28,11 @@ public class Supplier {
         this.Products.add(product);
     }
 
-    public org.example.Address getAddress() {
-        return Address;
+    @Override
+    public String toString() {
+        return "Supplier{" +
+                ", Name='" + this.getName() + '\'' +
+                ", BankAccountNumber='" + BankAccountNumber + '\'' +
+                '}';
     }
 }
